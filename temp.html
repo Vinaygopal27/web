@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://kit.fontawesome.com/54e01506e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>CD Shoppe</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <a class="brandk" href="">CD Shopee</a>
+        <ol class="navbar">
+            <a class="nav" href="home.html">Home</a>
+            <a class="nav curr" href="explore.html">Explore</a>
+            <a class="nav" href="my_account.html">My Account</a>
+        </ol>
+        <div class="searchbar">
+            <input type="search" name="Search Products" id="sbar" placeholder="Search Products"> |
+            <div class="dropdown">
+                <a>Filter by:</a>
+                <button onclick="myFunction()" class="dropbtn">All categories<i class="arrow down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            |
+            <div class="dropdown1">
+                <a>Sort by</a>
+                <button onclick="myFunctionk()" class="dropbtn1">Relevance<i class="arrow down"></i></button>
+                <div id="myDropdown1" class="dropdown-content1">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+        <a id="cartcount" class="count">0</a>
+        <img id="mycrt" class="cart" src="./img/shopping-cart-3045.svg" onclick="mycart();"></img>
+        <section class="featured">
+            <div class="row">
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt1" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt2" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt3" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt4" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt5" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt6" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt7" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt8" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt9" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt10" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt11" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt12" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt13" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt14" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="product">
+                    <img src="./img/guccibag.jpeg" alt="Gucci Leather Bag">
+                    <h5>Gucci Leather Bag</h5>
+                    <p class="price">Rs. 5,999</p>
+                    <p class="rate">4.2 <img src="./img/Star-alt-icon-removebg-preview.png" alt=""></p>
+                    <button id="crt15" class="btncrt" onclick="addc($(this).attr('id'));">Add to cart</button>
+                    <button class="buy">Buy now</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div id="mcrt" class="mycart"></div>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        function mycart() {
+            document.getElementById("mcrt").classList.toggle("show");
+        }
+        var count = 0;
+        var c = document.getElementById("cartcount");
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+            if (!event.target.matches('.dropbtn1')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content1");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        function myFunctionk() {
+            document.getElementById("myDropdown1").classList.toggle("show");
+        }
+        function addc(classname) {
+            console.log(classname);
+            var a = document.getElementById(classname);
+            if (a.innerText != "Added") {
+                a.innerText = "Added";
+                count += 1;
+
+            } else {
+                a.innerText = "Add to cart";
+                count -= 1;
+            }
+            c.innerText = count.toString();
+            console.log(count);
+        }
+    </script>
+</body>
+
+</html>

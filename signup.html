@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/signup.css">
+</head>
+<body>
+    <div action="/signup" method="post" class="container">
+        <div class="logo"></div>
+        <a class="brand" href="">CD SHOPEE</a>
+        <ol class="navbar">
+        <a class="nav" href="explore">Explore</a>
+        <a class="nav" href="login">Login</a></ol>
+        <div class="login">
+            <h1 >Sign up</h1>
+            <p class="name">Email or Username</p>
+            <input class="inp" type="text" name="username" placeholder="     Email or Username" required>
+            <p class="name">Create Password</p>
+            <input class="inp" type="password" name="password" placeholder="    Password" required>
+            <p class="name">Confirm Password</p>
+            <input class="inp" type="password" name="password" placeholder="    Password" required>
+            <input class="btn" type="submit" onclick="signup()" value="Signup">
+        </div>
+        <div class="log"></div>
+    </div>
+</body>
+</html>

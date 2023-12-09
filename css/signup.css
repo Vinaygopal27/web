@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+body{
+    top: 0;
+    left: 0;
+    background-color: rgba(10, 207, 233, 0.659);
+    height: fit-content;
+    width: fit-content;
+}
+.logo{
+    height:50px;
+    width: 50px;
+    background-image: url("./img/crystal_delta_logo.jpg");
+    background-size: cover;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+.brand{
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    left: 70px;
+    bottom: 25px;
+}
+.container{
+    height: 620px;
+    width: 1320px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 8.2%;
+    top: 60px;
+    border-radius: 25px;
+    box-shadow: 1px 5px 10px 5px rgba(0,0,0,0.2);
+}
+.log{
+    background-image: url("./img/login.png");
+    background-repeat: no-repeat;
+    height: 425px;
+    width: 586px;
+    position: relative;
+    bottom: 550px;
+    right: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70%;
+    margin-right: 14%;
+    position: relative;
+    bottom: 50px;
+}
+.nav{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.818);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    box-shadow: none;
+}
+.login{
+    height: 500px;
+    width: 450px;
+    margin-left: 58%;
+    border-radius: 20px;
+}
+h1{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    position: relative;
+    left: 15%;
+    top: 7%;
+}
+.inp{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid rgba(10, 207, 233, 0.481);
+    position: relative;
+    left: 15%;
+    top: 13%;
+}
+.name{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    position: relative;
+    left: 15%;
+    top: 13%;
+}
+.btn{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    left: 30%;
+    top: 20%;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(252, 125, 75, 0.893);
+    color: aliceblue;
+    cursor: pointer;
+}
